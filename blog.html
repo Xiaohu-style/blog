@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="zh-CN" style="color-scheme: dark;">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hugh - My Blog</title>
+
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/backg.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/blog.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <link rel="shortcut icon" href="./image/logo.svg" />
+</head>
+
+<body>
+
+    <div class="background-container">
+        <div id="video-day" class="background video">
+            <video autoplay muted loop>
+                <source src="https://web-detail.oss-cn-hangzhou.aliyuncs.com/image/ingame.mp4" type="video/mp4">
+
+            </video>
+        </div>
+        <div id="video-night" class="background video">
+            <video autoplay muted loop>
+                <source src="https://web-detail.oss-cn-hangzhou.aliyuncs.com/image/night.mp4" type="video/mp4">
+
+            </video>
+        </div>
+    </div>
+    <canvas class="fireworks"></canvas>
+
+    <div class="head">
+        <div class="main">
+            <a href="./index.html" class="logo"><img src="./image/index.svg"></a>
+            <div class="menu">
+                <li class="magi btn " onclick="window.location.href='./index.html'">Home</li>
+                <li class="magi btn" onclick="window.location.href='./Photo.html'">Photo</li>
+                <li class="magi btn nav" onclick="window.location.href='./blog.html'">Blog</li>
+                <li class="magi btn " onclick="window.location.href='./about.html'">About</li>
+            </div>
+            <div class="menu" id="menu-expand">
+                <ul>
+                    <li class="magi btn skin" id="menu-expand-child"><i class="icon menu-icon"></i></li>
+                </ul>
+            </div>
+            <div id="menu-panel">
+                <div class="menu-panel-content">
+                    <ul>
+                        <li class="magi btn " onclick="window.location.href='./index.html'">Home</li>
+                        <li class="magi btn" onclick="window.location.href='./Photo.html'">Photo</li>
+                        <li class="magi btn nav" onclick="window.location.href='./blog.html'">Blog</li>
+                        <li class="magi btn" onclick="window.location.href='./about.html'">About</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <blockquote><img src="./image/logo.svg"></blockquote>
+    </div>
+
+    <div class="hello">
+        <div class="title">
+            <a class="title-name" href="http://www.hugh-boker.xyz">推荐教程</a>
+        </div>
+        <div class="hello-desc" id="typed"></div>
+
+    </div>
+    <div class="uk-grid">
+        <div class="index-left">
+            <div class="x-index-top uk-width-1-1">
+                <div class="uk-margin">
+                    <div class="uk-margin uk-clearfix">
+                        <div style="float:left">
+                            <a href="#" target="_blank"><img src="./image/images/blog/s.jfif"></a>
+                        </div>
+                        <div style="margin-left:170px;">
+                            <h3><a href="#" target="_blank">Java教程</a></h3>
+                            <p>这是专门针对小白的零基础Java教程,使用最新的Java 20!可以在线免费学习!零基础迈向Java架构师!</p>
+                        </div>
+                    </div>
+
+                    <div class="uk-margin uk-clearfix">
+                        <div style="float:left">
+                            <a href="#" target="_blank"><img src="./image/images/blog/Mankefile.jfif"></a>
+                        </div>
+                        <div style="margin-left:170px;">
+                            <h3><a href="#" target="_blank">Makefile教程</a></h3>
+                            <p>从零开始编写Makefile!</p>
+                        </div>
+                    </div>
+
+                    <div class="uk-margin uk-clearfix">
+                        <div style="float:left">
+                            <a href="#" target="_blank"><img src="./image/images/blog/Spring.jfif"></a>
+                        </div>
+                        <div style="margin-left:170px;">
+                            <h3><a href="#" target="_blank">手写Spring</a></h3>
+                            <p>自己动手,从零开发一个迷你版的Spring框架!</p>
+                        </div>
+                    </div>
+                    <div class="uk-margin uk-clearfix">
+                        <div style="float:left">
+                            <a href="#" target="_blank"><img src="./image/images/blog/Spring.jfif"></a>
+                        </div>
+                        <div style="margin-left:170px;">
+                            <h3><a href="#" target="_blank">手写Spring</a></h3>
+                            <p>自己动手,从零开发一个迷你版的Spring框架!</p>
+                        </div>
+                    </div>
+
+                    <div class="uk-margin uk-clearfix">
+                        <div style="float:left">
+                            <a href="#" target="_blank"><img src="./image/images/blog/tomcat.jfif"></a>
+                        </div>
+                        <div style="margin-left:170px;">
+                            <h3><a href="#" target="_blank">手写Tomcat</a></h3>
+                            <p>自己动手,从零开发一个迷你版的Tomcat服务器!</p>
+                        </div>
+                    </div>
+
+                    <div class="uk-margin uk-clearfix">
+                        <div style="float:left">
+                            <a href="#" target="_blank"><img src="./image/images/blog/JavaScript.jfif"></a>
+                        </div>
+                        <div style="margin-left:170px;">
+                            <h3><a href="/wiki/1022910821149312" target="_blank">JavaScript教程</a></h3>
+                            <p>这是小白的零基础JavaScript全栈教程,可以在线免费学习!可以在线编写JavaScript代码并直接运行!零基础迈向全栈开发工程师!</p>
+                        </div>
+                    </div>
+
+                    <div class="uk-margin uk-clearfix">
+                        <div style="float:left">
+                            <a href="#" target="_blank"><img src="./image/images/blog/python.jfif"></a>
+                        </div>
+                        <div style="margin-left:170px;">
+                            <h3><a href="#" target="_blank">Python教程</a></h3>
+                            <p>小白的Python新手教程,具有如下特点：中文,免费,零起点,完整示例,基于最新的Python 3版本。随着AI时代的来临,Python已经是必学语言。</p>
+                        </div>
+                    </div>
+
+                    <div class="uk-margin uk-clearfix">
+                        <div style="float:left">
+                            <a href="#" target="_blank"><img src="./image/images/blog/qrs.jfif"></a>
+                        </div>
+                        <div style="margin-left:170px;">
+                            <h3><a href="#" target="_blank">嵌入式系统开发入门指南</a></h3>
+                            <p>从零开始学习嵌入式系统开发，掌握实时操作系统（RTOS）、嵌入式软件开发和硬件设计！</p>
+                        </div>
+                    </div>
+
+                    <div class="uk-margin uk-clearfix">
+                        <div style="float:left">
+                            <a href="#" target="_blank"><img src="./image/images/blog/SQL.jfif"></a>
+                        </div>
+                        <div style="margin-left:170px;">
+                            <h3><a href="#" target="_blank">SQL教程</a></h3>
+                            <p>小白的SQL新手教程,可以在线运行SQL,边学边练,一周掌握SQL!</p>
+                        </div>
+                    </div>
+
+                    <div class="uk-margin uk-clearfix">
+                        <div style="float:left">
+                            <a href="#" target="_blank"><img src="./image/images/blog/Gitjfif.jfif"></a>
+                        </div>
+                        <div style="margin-left:170px;">
+                            <h3><a href="#" target="_blank">Git教程</a></h3>
+                            <p>史上最浅显易懂的Git教程,绝对面向初学者!如果你是一个开发人员,想用上这个世界上目前最先进的分布式版本控制系统,那么,赶快开始学习吧!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="index-right">
+            <div class="main_right_title">相关内容</div>
+            <div class="details_tag flex flex_wrap">
+                <a href="#" target="_blank" title="帮助中心" class="item">
+                    帮助中心
+                </a>
+                <a href="#" target="_blank" title="版本更新记录" class="item">
+                    版本更新记录
+                </a>
+            </div>
+            <div class="list">
+                <a href="#" title="设计网站中有哪些关键技巧？" class="item">
+                    <div class="explain">
+                        <div class="explain_title">学习软件工程专业的关键技巧</div>
+                        <div class="explain_content">
+                            <p>学习软件工程专业有哪些关键技巧？有哪些陷阱需要避免？在这里，专业软件工程师分享他们的秘诀，
+                                告诉你如何提升编码技能、解决问题的方法、学习新技术的策略，以及他们推荐的学习资源。</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" title="网站设计中的色彩学，网站设计中如何更好地运用色彩搭配" class="item">
+                    <div class="explain">
+                        <div class="explain_title">软件工程中如何更好地运用技术与工具</div>
+                        <div class="explain_content">
+                            <p>在软件工程中，有效地运用技术与工具可以极大地提升开发效率和代码质量。
+                                选择适合项目需求的开发框架和库，以及掌握良好的编码实践和设计模式，
+                                是成功的关键。本文探讨如何在软件工程中精确应用技术与工具，提高项目的可维护性和扩展性。
+                            </p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" title="深圳网站设计，什么样的网站导航设计会吸引你？" class="item">
+                    <div class="explain">
+                        <div class="explain_title">前端设计中如何吸引用户的注意？</div>
+                        <div class="explain_content">
+                            <p>今年，许多前端设计趋势将小元素纳入界面，成为用户体验的关键组成部分。
+                                除了设计趋势，还有各种吸引用户注意的方法，如动画效果、交互性强的元素以及响应式设计，
+                                这些都是前端设计师关注和应用的重要方面。
+                            </p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" title="好的网页设计应该具备什么条件？" class="item">
+                    <div class="explain">
+                        <div class="explain_title">好的网页设计应该具备什么条件？</div>
+                        <div class="explain_content">
+                            <p>网页设计必须简约，任何无用的特质都必须移除；与此同时，网页设计必须能够满足用户需求。</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" title="做网站设计时，我们应该考虑哪些因素？" class="item">
+                    <div class="explain">
+                        <div class="explain_title">做网站设计时，我们应该考虑哪些因素？</div>
+                        <div class="explain_content">
+                            <p>做网站设计时，我们应该考虑哪些因素？在做的过程中设计师应该思考哪些问题，怎么样才能做好网站设计？</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" title="网站设计中设计师到底要实现什么价值？" class="item">
+                    <div class="explain">
+                        <div class="explain_title">软件工程专业的学子如何实现与创造价值？</div>
+                        <div class="explain_content">
+                            <p>软件工程专业的学子们，他们的目标是如何在实践中实现和创造价值？
+                                他们是否真正理解用户的需求，是否能够设计出优秀的软件产品来解决实际问题？
+                                这些是衡量他们在行业中成功的关键因素。本文探讨软件工程学子如何通过技术和创新实现持续的价值创造。
+                            </p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" title="什么是玻璃拟态？玻璃拟态风格赏析" class="item">
+                    <div class="explain">
+                        <div class="explain_title">Java中的设计模式：深入理解和应用</div>
+                        <div class="explain_content">
+                            <p>在Java编程中，设计模式是提高代码可维护性和复用性的关键。
+                                了解和熟练应用设计模式，能够有效地解决各种软件设计中的常见问题。
+                                本文将深入探讨Java中的各种设计模式，如工厂模式、单例模式以及观察者模式，
+                                并演示它们在实际项目中的应用。
+                            </p>
+                        </div>
+
+                    </div>
+                </a>
+                <a href="#" title="如何设计玻璃拟态效果，玻璃拟态呈现方式" class="item">
+                    <div class="explain">
+                        <div class="explain_title">Java多线程编程实战指南</div>
+                        <div class="explain_content">
+                            <p>多线程编程是Java中的重要部分，能够显著提升程序的性能和响应速度。
+                                掌握如何设计和实现多线程程序是每个Java开发者必备的技能。
+                                本文将深入探讨Java中的多线程编程技术，包括线程的创建、同步与互斥、
+                                线程池的使用等方面，帮助您在实际项目中编写高效、可靠的多线程代码。
+                            </p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" title="如何设计玻璃拟态效果，玻璃拟态呈现方式" class="item">
+                    <div class="explain">
+                        <div class="explain_title">Python异步编程实战指南</div>
+                        <div class="explain_content">
+                            <p>异步编程是Python中非常重要的一部分，能够极大地提升程序的并发处理能力和性能。
+                                掌握如何利用异步编程模型设计和实现程序，对于每个Python开发者都是必备的技能。
+                                本文将深入探讨Python中的异步编程技术，包括asyncio库的使用、协程的实现、异步IO操作等方面，帮助您编写出高效、响应迅速的异步程序。
+                            </p>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer">
+        <div class="copyright">
+            <div>© 2024 Design by <a href="https://asorn.cn/" target="_blank">Asorn</a></div>
+            <span>|</span>
+            <div class="fillings">
+                <a href="http://beian.miit.gov.cn/" target="_blank">渝ICP备2024036300号</a>
+            </div>
+            <span>|</span>
+            <div class="friends">
+                <a href="https://zdo.fun/" target="_blank">ZDO</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="widget">
+        <div class="shape-light"></div>
+        <div class="shape-star">
+            <div class="rising-stars rising-stars-visible">
+                <div style="height:1px;width:1px"></div>
+                <div style="height:2px;width:2px"></div>
+                <div style="height:1px;width:1px"></div>
+            </div>
+        </div>
+        <div class="shape-earth"></div>
+    </div>
+
+</body>
+<script src="./js/hide.js"></script>
+<script src='./js/firework.js'></script>
+<script src="./js/official3.js"></script>
+<script src="./js/background.js"></script>
+</html>

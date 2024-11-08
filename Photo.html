@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="zh-CN" style="color-scheme: dark;">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hugh - My Life</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/backg.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/photo/title.css">
+    <link rel="stylesheet" href="./css/photo/photo.css">
+    <link rel="shortcut icon" href="./image/logo.svg" />
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+</head>
+
+<body>
+    <div class="background-container">
+        <div id="video-day" class="background video">
+            <video autoplay muted loop>
+                <source src="https://web-detail.oss-cn-hangzhou.aliyuncs.com/image/ingame.mp4" type="video/mp4">
+
+            </video>
+        </div>
+        <div id="video-night" class="background video">
+            <video autoplay muted loop>
+                <source src="https://web-detail.oss-cn-hangzhou.aliyuncs.com/image/night.mp4" type="video/mp4">
+
+            </video>
+        </div>
+    </div>
+    <canvas class="fireworks"></canvas>
+    <div class="head">
+        <div class="main">
+            <a href="./index.html" class="logo"><img src="./image/index.svg"></a>
+            <div class="menu">
+                <li class="magi btn " onclick="window.location.href='./index.html'">Home</li>
+                <li class="magi btn nav" onclick="window.location.href='./Photo.html'">Photo</li>
+                <li class="magi btn " onclick="window.location.href='./blog.html'">Blog</li>
+                <li class="magi btn " onclick="window.location.href='./about.html'">About</li>
+            </div>
+            <div class="menu" id="menu-expand">
+                <ul>
+                    <li class="magi btn skin" id="menu-expand-child"><i class="icon menu-icon"></i></li>
+                </ul>
+            </div>
+            <div id="menu-panel">
+                <div class="menu-panel-content">
+                    <ul>
+                        <li class="magi btn " onclick="window.location.href='./index.html'">Home</li>
+                        <li class="magi btn nav" onclick="window.location.href='./Photo.html'">Photo</li>
+                        <li class="magi btn" onclick="window.location.href='./blog.html'">Blog</li>
+                        <li class="magi btn" onclick="window.location.href='./about.html'">About</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <blockquote><img src="./image/logo.svg"></blockquote>
+    </div>
+
+
+    <div class="index">
+        <div class="hello">
+            <div class="title">
+                <div class="title-hi">This is my</div>
+                <a class="title-name" href="http://www.hugh-boker.xyz">Photo</a>
+            </div>
+            <div class="hello-desc" id="typed"></div>
+        </div>
+
+        <div class="quickly-link">
+            <div class="link-card">
+                <div class="link-card-list">
+                    <div class="el-col el-col-24 el-col-xs-12 el-col-sm-6 col-space">
+                        <a href="./scenery.html">
+                            <div class="albumList-box flex_center">
+                                <div class="albumList-box__mask">
+                                    <span class="name text_overflow" style="color: #fff;">风景</span>
+                                    <span class="desc text_detail">记录沿途的风景</span>
+                                </div>
+                                <div class="el-image albumList-box__image">
+                                    <img src="./image/images/fj/wall-4026086_1280.jpg"
+                                        class="el-image__inner">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="el-col el-col-24 el-col-xs-12 el-col-sm-6 col-space">
+                        <div class="albumList-box flex_center">
+                            <a href="./food.html">
+                                <div class="albumList-box__mask">
+                                    <span class="name text_overflow" style="color: #fff;">美食</span>
+                                    <span class="desc text_detail">唯有美食不可辜负</span>
+                                </div>
+                                <div class="el-image albumList-box__image">
+                                    <img src="http://img.mrzym.top/Fq1-Qoqs0jRDcydfqDbCAwUviz8-"
+                                        class="el-image__inner">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="el-col el-col-24 el-col-xs-12 el-col-sm-6 col-space">
+                        <div class="albumList-box flex_center">
+                            <a href="./life.html">
+                            <div class="albumList-box__mask">
+                                <span class="name text_overflow" style="color: #fff;">日常</span>
+                                <span class="desc text_detail">随手拍拍~~</span>
+                            </div>
+                            <div class="el-image albumList-box__image">
+                                <img src="./image/images/life/2020_09_22_20_31_39.jpg" class="el-image__inner">
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="el-col el-col-24 el-col-xs-12 el-col-sm-6 col-space">
+                        <div class="albumList-box flex_center">
+                            <a href="./cat.html">
+                                <div class="albumList-box__mask">
+                                    <span class="name text_overflow" style="color: #fff;">麻爷喵</span>
+                                    <span class="desc text_detail">让俺看看谁还没有可爱的小猫咪</span>
+                                </div>
+                                <div class="el-image albumList-box__image">
+                                    <img src="http://img.mrzym.top/FkhEXReAyMFHhASGeAjsCL3Eqcw5" class="el-image__inner">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="el-col el-col-24 el-col-xs-12 el-col-sm-6 col-space">
+                        <div class="albumList-box flex_center">
+                            <a href="./flower.html">
+                                <div class="albumList-box__mask">
+                                    <span class="name text_overflow" style="color: #fff;">花草</span>
+                                    <span class="desc text_detail">让俺看看这些绚丽的花草</span>
+                                </div>
+                                <div class="el-image albumList-box__image">
+                                    <img src="./image/images/flower/_2020-04-05_38_38.jpg" class="el-image__inner">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="el-col el-col-24 el-col-xs-12 el-col-sm-6 col-space">
+                        <div class="albumList-box flex_center">
+                            <a href="yj.html" id="album-link">
+                                <div class="albumList-box__mask">
+                                    <span class="name text_overflow" style="color: #fff;">悦己</span>
+                                    <span class="desc text_detail">属于自己的青春</span>
+                                </div>
+                                <div class="el-image albumList-box__image">
+                                    <img  src="./image/images/yj/password.png" class="el-image__inner" alt="Album Image">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="copyright">
+            <div>© 2024 Design by <a href="https://asorn.cn/" target="_blank">Asorn</a></div>
+            <span>|</span>
+            <div class="fillings">
+                <a href="http://beian.miit.gov.cn/" target="_blank">渝ICP备2024036300号</a>
+            </div>
+            <span>|</span>
+            <div class="friends">
+                <a href="https://zdo.fun/" target="_blank">ZDO</a>
+            </div>
+        </div>
+    </div>
+    <div class="widget">
+        <div class="shape-light"></div>
+        <div class="shape-star">
+            <div class="rising-stars rising-stars-visible">
+                <div style="height:1px;width:1px"></div>
+                <div style="height:2px;width:2px"></div>
+                <div style="height:1px;width:1px"></div>
+            </div>
+        </div>
+        <div class="shape-earth"></div>
+    </div>
+</body>
+<script src="./js/hide.js"></script>
+<script src="./js/official .js"></script>
+<script src='./js/firework.js'></script>
+<script src="./js/background.js"></script>
+</html>

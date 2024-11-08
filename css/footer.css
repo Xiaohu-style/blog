@@ -1,0 +1,47 @@
+.footer {
+    padding: 60px 40px 20px 40px;
+    font-size: 12px;
+    line-height: 20px;
+    color: #62616F;
+}
+
+.footer .copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    --mw: 968px;
+    gap: 12px;
+}
+
+.footer .copyright .main {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: var(--mw);
+}
+
+.footer .copyright a {
+    transition: color .15s ease-in;
+    color: #62616F;
+}
+
+.footer .copyright a:hover {
+    color: #6361DC;
+}
+
+.footer .copyright .friends {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    --mw: 968px;
+    gap: 8px;
+}
+
+.footer .copyright .friends .main {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: var(--mw);
+}

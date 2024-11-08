@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="zh-CN" style="color-scheme: dark;">
+
+<head>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Hugh - Personal blog</title>
+	<link rel="stylesheet" href="./css/index.css">
+	<link rel="stylesheet" href="./css/backg.css">
+	<link rel="stylesheet" href="./css/header.css">
+	<link rel="stylesheet" href="./css/footer.css">
+	<link rel="stylesheet" href="./css/index/title.css">
+	<link rel="shortcut icon" href="./image/logo.svg" />
+	<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+</head>
+
+<body>
+	<div class="background-container">
+		<div id="video-day" class="background video">
+			<video autoplay muted loop>
+				<source src="https://web-detail.oss-cn-hangzhou.aliyuncs.com/image/ingame.mp4" type="video/mp4">
+			</video>
+		</div>
+		<div id="video-night" class="background video">
+			<video autoplay muted loop>
+				<source src="https://web-detail.oss-cn-hangzhou.aliyuncs.com/image/night.mp4" type="video/mp4">
+			</video>
+		</div>
+	</div>
+
+	<canvas class="fireworks"></canvas>
+
+
+	<div class="head">
+		<div class="main">
+			<a href="./index.html" class="logo"><img src="./image/index.svg"></a>
+			<div class="menu">
+				<li class="magi btn nav" onclick="window.location.href='./index.html'">Home</li>
+				<li class="magi btn" onclick="window.location.href='./Photo.html'">Photo</li>
+				<li class="magi btn " onclick="window.location.href='./blog.html'">Blog</li>
+				<li class="magi btn " onclick="window.location.href='./about.html'">About</li>
+			</div>
+			<div class="menu" id="menu-expand">
+				<ul>
+					<li class="magi btn skin" id="menu-expand-child"><i class="icon menu-icon"></i></li>
+				</ul>
+			</div>
+			<div id="menu-panel">
+				<div class="menu-panel-content">
+					<ul>
+						<li class="magi btn nav" onclick="window.location.href='./index.html'">Home</li>
+						<li class="magi btn" onclick="window.location.href='./Photo.html'">Photo</li>
+						<li class="magi btn" onclick="window.location.href='./blog.html'">Blog</li>
+						<li class="magi btn" onclick="window.location.href='./about.html'">About</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<blockquote><img src="./image/logo.svg"></blockquote>
+	</div>
+
+
+	<div class="index">
+		<div class="hello">
+			<div class="title">
+				<div class="title-hi">Hi, I'm</div>
+				<a class="title-name" href="http://www.hugh-boker.xyz">Hugh</a>
+			</div>
+			<div class="hello-desc" id="typed"></div>
+			<script src="./js/official2.js"></script>
+		</div>
+
+
+		<div class="quickly-link">
+			<div class="title-hi">What did I do</div>
+			<div class="quickly-link">
+				<div class="loader"></div>
+				<div class="link-card">
+					<div class="link-card-list">
+						<div class="magical link-card-item">
+							<a href="https://gitee.com/xiaohu_dsa" target="_blank">
+								<img src="./image/gitee.svg" alt="">
+								<div class="info">
+									<div class="info-title">Gitee</div>
+									<div class="info-desc">Code collaborative development platform </div>
+								</div>
+
+
+								<div class="icon icon-arrow">
+									<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14"
+										fill="none">
+										<path
+											d="M10.55 7.58332H1.16663V6.41665H10.55L7.75415 3.62082L8.5791 2.79587L12.1645
+                                     6.3813C12.5062 6.72299 12.5062 7.27701 12.1645 7.61873L8.5791 11.2042L7.75415 10.3792L10.55 7.58332Z"
+											fill="#B3B3C1"></path>
+									</svg>
+								</div>
+							</a>
+						</div>
+
+						<div class="magical link-card-item">
+							<a href="https://gitee.com/xiaohu_dsa" target="_blank">
+								<img src="./image/leetcode.svg" alt="">
+								<div class="info">
+									<div class="info-title">Leetcode</div>
+									<div class="info-desc">My place of learning </div>
+								</div>
+
+
+								<div class="icon icon-arrow">
+									<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14"
+										fill="none">
+										<path
+											d="M10.55 7.58332H1.16663V6.41665H10.55L7.75415 3.62082L8.5791 2.79587L12.1645
+                                     6.3813C12.5062 6.72299 12.5062 7.27701 12.1645 7.61873L8.5791 11.2042L7.75415 10.3792L10.55 7.58332Z"
+											fill="#B3B3C1"></path>
+									</svg>
+								</div>
+							</a>
+						</div>
+						<div class="magical link-card-item">
+							<a href="https://larkmap.com" target="_blank">
+								<img src="./image/larkmap.png" alt="">
+								<div class="info">
+									<div class="info-title">Larkmap</div>
+									<div class="info-desc">Tools commonly used by designers </div>
+								</div>
+
+
+								<div class="icon icon-arrow">
+									<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14"
+										fill="none">
+										<path
+											d="M10.55 7.58332H1.16663V6.41665H10.55L7.75415 3.62082L8.5791 2.79587L12.1645
+                                     6.3813C12.5062 6.72299 12.5062 7.27701 12.1645 7.61873L8.5791 11.2042L7.75415 10.3792L10.55 7.58332Z"
+											fill="#B3B3C1"></path>
+									</svg>
+								</div>
+							</a>
+						</div>
+
+						<div class="magical link-card-item">
+							<a href="https://larkmap.com" target="_blank">
+								<img src="./image/zk.svg" alt="">
+								<div class="info">
+									<div class="info-title">Z Cool</div>
+									<div class="info-desc">Designers often use website navigations </div>
+								</div>
+
+
+								<div class="icon icon-arrow">
+									<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14"
+										fill="none">
+										<path
+											d="M10.55 7.58332H1.16663V6.41665H10.55L7.75415 3.62082L8.5791 2.79587L12.1645
+                                     6.3813C12.5062 6.72299 12.5062 7.27701 12.1645 7.61873L8.5791 11.2042L7.75415 10.3792L10.55 7.58332Z"
+											fill="#B3B3C1"></path>
+									</svg>
+								</div>
+							</a>
+						</div>
+
+						<div class="magical link-card-item">
+							<a href="https://space.bilibili.com/512338734?spm_id_from=333.1007.0.0" target="_blank">
+								<img src="./image/blbl.svg" alt="">
+								<div class="info">
+									<div class="info-title">BliBli</div>
+									<div class="info-desc">My Learning Site</div>
+								</div>
+
+
+								<div class="icon icon-arrow">
+									<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14"
+										fill="none">
+										<path
+											d="M10.55 7.58332H1.16663V6.41665H10.55L7.75415 3.62082L8.5791 2.79587L12.1645
+                                     6.3813C12.5062 6.72299 12.5062 7.27701 12.1645 7.61873L8.5791 11.2042L7.75415 10.3792L10.55 7.58332Z"
+											fill="#B3B3C1"></path>
+									</svg>
+								</div>
+							</a>
+						</div>
+						<div class="magical link-card-item" style="--mouse-x: 866px; --mouse-y: -35.333343505859375px;">
+							<a href="https://btn.biliui.com/" target="_blank">
+								<img src="https://btn.biliui.com/assets/logo.svg" alt="">
+								<div class="info">
+									<div class="info-title">Linear Buttons</div>
+									<div class="info-desc">Linear 风格按钮鉴赏</div>
+								</div>
+								<div class="icon icon-arrow">
+									<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14"
+										fill="none">
+										<path
+											d="M10.55 7.58332H1.16663V6.41665H10.55L7.75415 3.62082L8.5791 2.79587L12.1645 6.3813C12.5062 6.72299 12.5062 7.27701 12.1645 7.61873L8.5791 11.2042L7.75415 10.3792L10.55 7.58332Z"
+											fill="#B3B3C1"></path>
+									</svg>
+								</div>
+							</a>
+							<div class="show" style="opacity: 0;"></div>
+						</div>
+
+
+					</div>
+					<svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M3.5 8V0H4.5V8H3.5Z" fill="#62616F"></path>
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M8 4.5H0V3.5H8V4.5Z" fill="#62616F"></path>
+					</svg>
+
+					<div class="link-card-list">
+						<div class="magical link-card-item" style="--mouse-x: 355px; --mouse-y: -175px;">
+							<a href="https://www.xiaohongshu.com/user/profile/5d29604a0000000011011461" target="_blank">
+								<img src="./image/book.svg" alt="">
+								<div class="info">
+									<div class="info-title">小红书</div>
+									<div class="info-desc">生活琐碎笔记</div>
+								</div>
+								<div class="icon icon-arrow">
+									<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14"
+										fill="none">
+										<path
+											d="M10.55 7.58332H1.16663V6.41665H10.55L7.75415 3.62082L8.5791 2.79587L12.1645 6.3813C12.5062 6.72299 12.5062 7.27701 12.1645 7.61873L8.5791 11.2042L7.75415 10.3792L10.55 7.58332Z"
+											fill="#B3B3C1"></path>
+									</svg>
+								</div>
+							</a>
+							<div class="show" style="opacity: 0;"></div>
+						</div>
+						<div class="magical link-card-item">
+							<a href="https://oss.console.aliyun.com/bucket/oss-cn-hangzhou/web-detail/object"
+								target="_blank">
+								<img src="./image/ali.svg" alt="">
+								<div class="info">
+									<div class="info-title">Ali server</div>
+									<div class="info-desc">Exclusive to my server</div>
+								</div>
+								<div class="icon icon-arrow">
+									<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14"
+										fill="none">
+										<path
+											d="M10.55 7.58332H1.16663V6.41665H10.55L7.75415 3.62082L8.5791 2.79587L12.1645 6.3813C12.5062 6.72299 12.5062 7.27701 12.1645 7.61873L8.5791 11.2042L7.75415 10.3792L10.55 7.58332Z"
+											fill="#B3B3C1"></path>
+									</svg>
+								</div>
+							</a>
+						</div>
+
+						<div class="magical link-card-item">
+							<a href="https://github.com/Xiaohu-style" target="_blank">
+								<img src="./image/github.svg">
+								<div class="info">
+									<div class="info-title">Github</div>
+									<div class="info-desc">My code garden</div>
+								</div>
+								<div class="icon icon-arrow">
+									<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14"
+										fill="none">
+										<path
+											d="M10.55 7.58332H1.16663V6.41665H10.55L7.75415 3.62082L8.5791 2.79587L12.1645 6.3813C12.5062 6.72299 12.5062 7.27701 12.1645 7.61873L8.5791 11.2042L7.75415 10.3792L10.55 7.58332Z"
+											fill="#B3B3C1"></path>
+									</svg>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<div class="footer">
+		<div class="copyright">
+			<div>© 2024 Design by <a href="https://Hugh.com" target="_blank">Hugh</a></div>
+			<span>|</span>
+			<div class="fillings">
+				<a href="http://beian.miit.gov.cn/" target="_blank">渝ICP备2024036300号</a>
+			</div>
+			<span>|</span>
+			<div class="friends">
+				<a href="https://zdo.fun/" target="_blank">ZDO</a>
+			</div>
+		</div>
+	</div>
+
+</body>
+
+
+
+</script>
+<script src='./js/firework.js'></script>
+<script src="./js/hide.js"></script>
+<script src="./js/background.js"></script>
+
+</html>

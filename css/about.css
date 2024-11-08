@@ -1,0 +1,350 @@
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    --mw: 968px;
+    flex-direction: column;
+    padding: 154px 40px 60px 40px
+}
+
+.about .main {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: var(--mw)
+}
+
+.about .about-top {
+    max-width: var(--mw);
+    display: flex;
+    flex-direction: column
+}
+
+.about .about-name {
+    font-size: 32px;
+    line-height: 100%;
+    font-weight: 700;
+    margin-bottom: 48px;
+    background: linear-gradient(180deg, #E8E8F6 0%, rgba(232, 232, 246, 0.72) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent
+}
+
+.about .about-info {
+    display: flex;
+    gap: 72px
+}
+
+.about .about-info-title {
+    font-size: 18px;
+    line-height: 100%;
+    font-weight: 500;
+    margin-bottom: 24px;
+    background: linear-gradient(180deg, #E8E8F6 0%, rgba(232, 232, 246, 0.72) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent
+}
+
+.about .about-info-left {
+    max-width: 696px;
+}
+
+.about .about-info-left .introduce-desc {
+    font-size: 14px;
+    line-height: 24px;
+    color: #B3B3C1
+}
+
+.about .about-info-left .introduce-desc a {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 500;
+    text-decoration: underline;
+    color: #B3B3C1;
+    transition: color .15s ease-in
+}
+
+.about .about-info-left .introduce-desc a:hover {
+    color: #6361DC
+}
+
+.about .about-info-right {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    min-width: 200px
+}
+
+.about .about-info-right .contact-desc {
+    font-size: 14px;
+    line-height: 24px;
+    color: #B3B3C1
+}
+
+.about .about-info-right .contact-desc .list {
+    display: flex;
+    flex-direction: row
+}
+
+.about .about-info-right .contact-desc .list .list-label {
+    font-size: 14px;
+    line-height: 24px
+}
+
+.about .about-info-right .contact-desc .list .list-value a {
+    font-size: 14px;
+    line-height: 24px;
+    color: #B3B3C1;
+    transition: color .15s ease-in;
+    text-decoration: underline;
+    display: flex;
+    align-items: center;
+    gap: 4px
+}
+
+.about .about-info-right .contact-desc .list .list-value a:hover {
+    cursor: pointer;
+    color: #6361DC
+}
+
+.about .about-info-right .contact-desc .list .copied {
+    opacity: 0;
+    color: #15a675;
+    transition: opacity .4s;
+    margin-left: 4px
+}
+
+.about .about-info-right .resume-title {
+    margin-bottom: 8px
+}
+
+.about .about-info-right .resume-desc {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start
+}
+
+.about .about-info-right .resume-desc .resume-desc-helptext {
+    font-size: 12px;
+    line-height: 20px;
+    color: #62616F;
+    margin-bottom: 16px
+}
+
+.about-middle {
+    width: 100%;
+    max-width: var(--mw);
+    display: flex;
+    flex-direction: column;
+    margin: 40px 0 80px 0;
+}
+
+.about-middle .power {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.about-middle .power .list-00,
+.about-middle .power .list-01 {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-gap: 16px;
+}
+
+.about-middle .power .power-card,
+.about-middle .power .power-card-number {
+    --circle-size: 400px;
+    background-color: #141419;
+    box-shadow: 0px 0px 8px 0px rgba(10, 10, 14, 0.4);
+}
+
+.about-middle .power .power-card a,
+.about-middle .power .power-card-number a {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 16px;
+}
+
+.tooltip .tooltip-box {
+    display: flex;
+    width: 160px;
+    height: 160px;
+    visibility: hidden;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 20px;
+    box-shadow: 0px 4px 24px rgba(10, 10, 14, 0.12);
+    position: absolute;
+    right: 30%;
+    top: 335px;
+    z-index: 89;
+    opacity: 0;
+    transition: opacity .4s;
+}
+
+.tooltip .tooltip-box::after {
+    content: " ";
+    position: absolute;
+    bottom: 100%;
+    right: 10%;
+    border-width: 8px;
+    border-style: solid;
+    border-color: transparent transparent white transparent
+}
+
+.tooltip .tooltip-box img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 4px
+}
+
+.tooltip:hover .tooltip-box {
+    visibility: visible;
+    opacity: 1
+}
+
+.about-middle .power .power-card a .card-img,
+.about-middle .power .power-card-number a .card-title {
+    width: 32px;
+    height: 32px;
+    opacity: 0.8;
+    transition: opacity 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: no-repeat center;
+}
+
+.about-middle .power .power-card a .card-img img {
+    z-index: 1;
+}
+
+.about-middle .power .power-card a .card-img::after {
+    content: '';
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    filter: blur(10px);
+    background: inherit;
+    background-size: 100%;
+}
+
+.about-middle .power .power-card a:hover .card-img,
+.about-middle .power .power-card a:hover .card-text,
+.about-middle .power .power-card-number a:hover .card-title,
+.about-middle .power .power-card-number a:hover .card-text {
+    opacity: 1;
+    transition: opacity 0.4s;
+}
+
+.about-middle .power .power-card a .card-text,
+.about-middle .power .power-card-number a .card-text {
+    font-size: 12px;
+    line-height: 20px;
+    color: #b3b3c1;
+    opacity: 0.8;
+    transition: opacity 0.2s;
+}
+
+.about-middle .power .power-card-number a .card-title {
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 500;
+    background: linear-gradient(180deg, #e8e8f6 0%, rgba(232, 232, 246, 0.72) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 0.8;
+    transition: opacity 0.2s;
+}
+
+.about-bottom {
+    width: 100%;
+    max-width: var(--mw);
+    display: flex;
+    flex-direction: column
+}
+
+.about .about-bottom .experience {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 48px
+}
+
+.about .about-bottom .experience .item {
+    display: grid;
+    grid-template-columns: 1fr 1fr 3fr;
+    gap: 16px
+}
+
+.about .about-bottom .experience .item .time {
+    font-size: 14px;
+    line-height: 24px;
+    color: #B3B3C1
+}
+
+.about .about-bottom .experience .item .name {
+    display: flex;
+    flex-direction: column;
+    gap: 4px
+}
+
+.about .about-bottom .experience .item .name .company a {
+    font-size: 14px;
+    line-height: 24px;
+    color: #B3B3C1;
+    transition: color .15s ease-in
+}
+
+.about .about-bottom .experience .item .name .company a:hover {
+    color: #6361DC
+}
+
+.about .about-bottom .experience .item .name .job {
+    font-size: 12px;
+    line-height: 20px;
+    color: #62616F
+}
+
+.about .about-bottom .experience .item .project-experience {
+    display: flex;
+    flex-direction: column;
+    gap: 40px
+}
+
+.about .about-bottom .experience .item .project-experience .item {
+    display: flex;
+    flex-direction: column;
+    gap: 16px
+}
+
+.about .about-bottom .experience .item .project-experience .item .title {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 500;
+    background: linear-gradient(180deg, #E8E8F6 0%, rgba(232, 232, 246, 0.72) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent
+}
+
+.about .about-bottom .experience .item .project-experience .item .desc {
+    color: #B3B3C1
+}
+
+.about .about-bottom .experience .item .project-experience .item .desc li {
+    font-size: 14px;
+    line-height: 28px;
+    list-style: circle
+}

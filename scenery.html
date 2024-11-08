@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="zh-CN" style="color-scheme: dark;">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hugh - Personal blog</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/backg.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/photo/scenery.css">
+    <link rel="shortcut icon" href="./image/logo.svg" />
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+</head>
+
+<body>
+    <audio id="myAudio" autoplay loop volume="0.2">
+        <source src="https://web-detail.oss-cn-hangzhou.aliyuncs.com/image/Bloom.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <div class="background-container">
+        <div id="video-day" class="background video">
+            <video autoplay muted loop>
+                <source src="https://web-detail.oss-cn-hangzhou.aliyuncs.com/image/ingame.mp4" type="video/mp4">
+
+            </video>
+        </div>
+        <div id="video-night" class="background video">
+            <video autoplay muted loop>
+                <source src="https://web-detail.oss-cn-hangzhou.aliyuncs.com/image/night.mp4" type="video/mp4">
+
+            </video>
+        </div>
+    </div>
+    <canvas class="fireworks"></canvas>
+    <div class="head">
+        <div class="main">
+            <a href="./index.html" class="logo"><img src="./image/index.svg"></a>
+            <div class="menu">
+                <li class="magi btn " onclick="window.location.href='./index.html'">Home</li>
+                <li class="magi btn nav" onclick="window.location.href='./Photo.html'">Photo</li>
+                <li class="magi btn " onclick="window.location.href='./blog.html'">Blog</li>
+                <li class="magi btn" onclick="window.location.href='./about.html'">About</li>
+            </div>
+            <div class="menu" id="menu-expand">
+                <ul>
+                    <li class="magi btn skin" id="menu-expand-child"><i class="icon menu-icon"></i></li>
+                </ul>
+            </div>
+            <div id="menu-panel">
+                <div class="menu-panel-content">
+                    <ul>
+                        <li class="magi btn " onclick="window.location.href='./index.html'">Home</li>
+                        <li class="magi btn nav" onclick="window.location.href='./Photo.html'">Photo</li>
+                        <li class="magi btn" onclick="window.location.href='./blog.html'">Blog</li>
+                        <li class="magi btn" onclick="window.location.href='./about.html'">About</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <blockquote><img src="./image/logo.svg"></blockquote>
+    </div>
+    <div class="index">
+        <div class="hello">
+            <div class="title">
+                <div class="title-name">This is my 
+                    <a class="title-link" href="/Photo.html">Photo</a>
+                </div>
+            </div>
+            <img src="./image/images/fj/wall-4026086_1280.jpg" class="title-image">
+        </div>
+        
+
+
+        <div class="probootstrap-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 mb40 text-center">
+                        <h2 style="text-align: center;">Nature Photos</h2>
+                        <p>Posted on September 3, 2024</p>
+                    </div>
+                    <div class="col-md-6">
+                        <p>Standing amidst nature's masterful craftsmanship, the undulating mountains rise
+                            like the spine of a slumbering giant, while the crystal-clear lake mirrors the
+                            azure sky like a flawless mirror. The verdant trees and blooming flowers, each
+                            leaf and petal seemingly a detail in a masterpiece of natural art, all combine
+                            to create an unparalleled beauty that captivates and enchants.
+                        </p>
+
+                    </div>
+                    <div class="col-md-6">
+                        <p>
+                            Here lies nature's masterpiece, crafted by her <a href="#">masterful hand – majestic
+                                mountains, murmuring streams</a>,and lush forests form an eternal tableau.
+                            Every leaf, every stone, every ray of sunlight is her generous gift, filling
+                            this land with the power of life and timeless beauty.
+                        </p>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="img-container">
+                                <img src="./image/images/fj/20240708093630.jpg" alt="Nature Photo 1">
+                            </div>
+                            <div class="img-container">
+                                <img src="./image/images/fj/20240708093913.jpg" alt="Nature Photo 2">
+                            </div>
+                            <div class="img-container">
+                                <img src="./image/images/fj/20240708093918.jpg" alt="Nature Photo 3">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="img-container">
+                                <img src="./image/images/fj/20240708093937.jpg" alt="Nature Photo 4">
+                            </div>
+                            <div class="img-container">
+                                <img src="./image/images/fj/20240708093927.jpg" alt="Nature Photo 5">
+                            </div>
+                            <div class="img-container">
+                                <img src="./image/images/fj/20240708093941.jpg" alt="Nature Photo 6">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="copyright">
+            <div>© 2024 Design by <a href="http://www.hugh-boker.xyz" target="_blank">Hugh</a></div>
+            <span>|</span>
+            <div class="fillings">
+                <a href="http://beian.miit.gov.cn/" target="_blank">渝ICP备2024036300号</a>
+            </div>
+            <span>|</span>
+            <div class="friends">
+                <a href="https://zdo.fun/" target="_blank">ZDO</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+
+</script>
+<script src="./js/hide.js"></script>
+<script src='./js/firework.js'></script>
+<script src="./js/background.js"></script>
+
+
+</html>
