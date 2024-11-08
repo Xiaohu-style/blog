@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="zh-CN" style="color-scheme: dark;">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hugh - About me</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/backg.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <link rel="stylesheet" href="./css/about.css">
+    <link rel="shortcut icon" href="./image/logo.svg" />
+</head>
+
+<body>
+    <div class="background-container">
+        <div id="video-day" class="background video">
+            <video autoplay muted loop>
+                <source src="https://web-detail.oss-cn-hangzhou.aliyuncs.com/image/ingame.mp4" type="video/mp4">
+
+            </video>
+        </div>
+        <div id="video-night" class="background video">
+            <video autoplay muted loop>
+                <source src="https://web-detail.oss-cn-hangzhou.aliyuncs.com/image/night.mp4" type="video/mp4">
+
+            </video>
+        </div>
+    </div>
+    <canvas class="fireworks"></canvas>
+
+
+    <div class="head">
+        <div class="main">
+            <a href="./index.html" class="logo"><img src="./image/index.svg"></a>
+            <div class="menu">
+                <li class="magi btn " onclick="window.location.href='./index.html'">Home</li>
+                <li class="magi btn" onclick="window.location.href='./Photo.html'">Photo</li>
+                <li class="magi btn " onclick="window.location.href='./blog.html'">Blog</li>
+                <li class="magi btn nav" onclick="window.location.href='./about.html'">About</li>
+            </div>
+            <div class="menu" id="menu-expand">
+                <ul>
+                    <li class="magi btn skin" id="menu-expand-child"><i class="icon menu-icon"></i></li>
+                </ul>
+            </div>
+            <div id="menu-panel">
+                <div class="menu-panel-content">
+                    <ul>
+                        <li class="magi btn nav" onclick="window.location.href='./index.html'">Home</li>
+                        <li class="magi btn" onclick="window.location.href='./Photo.html'">Photo</li>
+                        <li class="magi btn" onclick="window.location.href='./blog.html'">Blog</li>
+                        <li class="magi btn nav" onclick="window.location.href='./about.html'">About</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <blockquote><img src="./image/logo.svg"></blockquote>
+    </div>
+
+    
+    <div class="about">
+
+        <div class="about-top">
+            <div class="about-name">胡 勇</div>
+            <div class="about-info">
+                <div class="about-info-left">
+                    <div class="about-info-title">Introduce</div>
+                    <div class="introduce-desc">
+                        目前是一名学生,初级开发者,立志做一名软件工程师。拥有低代码、电商、智能客服等多行业洞察与实践落地经验。<br><br>
+                        我热衷于技术的无限可能性,并开启了简单的编程学习之旅。</a>（衍生品开源导航工具 <a href="https://nav.dippermap.com/"
+                            target="_blank">Dippermap ↗</a>）,图标库网站
+                        <a href="https://www.iconfont.cn/?spm=a313x.search_index.i3.d4d0a486a.ba463a81nrH0Bk"
+                            target="_blank">Iconfont ↗</a>
+                        </a>,前端产品常见页面布局适配方案 <a href="https://ant.design/index-cn" target="_blank">Ant Design 5.0
+                            ↗</a>,Linear 风格按钮鉴赏 <a href="https://btn.biliui.com/" target="_blank">Linear Buttons ↗</a>
+                        等。<br><br>
+                        对软件开发怀有浓烈的兴趣,且对Java语言熟悉,能熟练使用jsp、JavaScript、vue3、react和C语言等流行的编程技术,
+                        并且不断学习新技术来继续丰富自已的知识,目前已经独自编写了好几个项目,例如:基于vue2的图书管管理系统,react网络商城和库存管理系统等,
+                        基于Java与Web的教师管理系统,基于nginx的外卖系统。拥有一定的实践经验。但仍觉得经历甚浅,希望通过与社会接触,了解社会与软件之间的需求关系,
+                        通过更多的项目实践来提高自身的软件设计能力和编程技术。
+
+                    </div>
+                </div>
+                <div class="about-info-right">
+                    <div class="contact">
+                        <div class="about-info-title">Contact</div>
+                        <div class="contact-desc">
+                            <div class="list">
+                                <div class="list-label">Email:</div>
+                                <div href="javascript:" class="list-value" id="email" tabindex="0" role="button"
+                                    title="点击复制邮箱">
+                                    <a id="emailCopied">2398968182@qq.com</a>
+                                </div>
+                                <span class="list-value copied">copied&nbsp;✓</span>
+                            </div>
+                            <div class="list">
+                                <div class="list-label">Wechat:</div>
+                                <div class="list-value">
+                                    <a class="tooltip"> &nbsp; 悦 己.
+                                        <div class="tooltip-box">
+                                            <img src="./image/images/about/wechat.jpg">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="resume">
+                        <div class="about-info-title resume-title">Resume</div>
+                        <div class="resume-desc">
+                            <div class="resume-desc-helptext">Download my resume (PDF & 1MB)</div>
+                            <div class="magical resume-btn"><a
+                                    href="https://web-detail.oss-cn-hangzhou.aliyuncs.com/%E7%AE%80%E5%8E%86.pdf"
+                                    target="_blank">Download</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="about-middle">
+            <div class="power">
+                <div class="list-00">
+                    <div class="magical power-card-number" style="--mouse-x: 1188.5px; --mouse-y: -22px;">
+                        <a>
+                            <div class="card-title">4</div>
+                            <div class="card-text">学习年息</div>
+                        </a>
+                        <div class="show" style="opacity: 0;"></div>
+                    </div>
+                    <div class="magical power-card-number" style="--mouse-x: 942.5px; --mouse-y: -22px;">
+                        <a>
+                            <div class="card-title">8⁺</div>
+                            <div class="card-text">完整项目</div>
+                        </a>
+                        <div class="show" style="opacity: 0;"></div>
+                    </div>
+                    <div class="magical power-card-number" style="--mouse-x: 696.5px; --mouse-y: -22px;">
+                        <a>
+                            <div class="card-title">5⁺</div>
+                            <div class="card-text">技术文章</div>
+                        </a>
+                        <div class="show" style="opacity: 0;"></div>
+                    </div>
+
+                </div>
+                <div class="list-01">
+                    <div class="magical power-card" style="--mouse-x: 1188.5px; --mouse-y: -130px;">
+                        <a>
+                            <div class="card-img" style="background-image: url('./image/images/about/abstract.svg')">
+                            </div>
+                            <div class="card-text">强调结构化和系统化的设计思维、依据逻辑与数据驱动开发决策</div>
+                        </a>
+                        <div class="show" style="opacity: 0;"></div>
+                    </div>
+                    <div class="magical power-card" style="--mouse-x: 991.703125px; --mouse-y: -130px;">
+                        <a>
+                            <div class="card-img" style="background-image: url('./image/images/about/menu.svg')"></div>
+                            <div class="card-text">在系统化设计和架构方面积累丰富经验、专注于设计系统的持续优化与落地</div>
+                        </a>
+                        <div class="show" style="opacity: 0;"></div>
+                    </div>
+                    <div class="magical power-card" style="--mouse-x: 794.90625px; --mouse-y: -130px;">
+                        <a>
+                            <div class="card-img" style="background-image: url('./image/images/about/code.svg')"></div>
+                            <div class="card-text">深入理解前后端开发、善于角色转换与团队协作、采用工程化方法解决问题</div>
+                        </a>
+                        <div class="show" style="opacity: 0;"></div>
+                    </div>
+                    <div class="magical power-card" style="--mouse-x: 598.109375px; --mouse-y: -130px;">
+                        <a>
+                            <div class="card-img" style="background-image: url('./image/images/about/pin.svg')"></div>
+                            <div class="card-text">领导跨功能团队进行研发管理、协调产品设计与开发环节</div>
+                        </a>
+                        <div class="show" style="opacity: 0;"></div>
+                    </div>
+                    <div class="magical power-card" style="--mouse-x: 401.3125px; --mouse-y: -130px;">
+                        <a>
+                            <div class="card-img" style="background-image: url('./image/images/about/pen.svg')"></div>
+                            <div class="card-text">具有一定全栈开发经验、熟练处理 B、C 端产品需求、注重用户体验与像素精度</div>
+                        </a>
+                        <div class="show" style="opacity: 0;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="about-bottom">
+            <div class="experience">
+                <div class="item">
+                    <div class="time">❖ 2023.10 ~ 至今</div>
+                    <div class="name">
+                        <div class="company"><a>重庆城市科技学院</a></div>
+                        <div class="job">学生</div>
+                    </div>
+                    <div class="project-experience">
+                        <div class="item">
+                            <div class="title">前后端交互项目</div>
+                            <div class="desc">
+                                <ul>
+                                    <li>App、Web、Vue3、小程序、后台设计、爬虫、Ui 交互设计</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="item">
+                    <div class="time">❖ 2020.10 ~ 2023.06</div>
+                    <div class="name">
+                        <div class="company"><a href="https://www.qingcloud.com/" target="_blank">重庆城市管理职业学院 ↗</a></div>
+                        <div class="job">学生</div>
+                    </div>
+                    <div class="project-experience">
+                        <div class="item">
+                            <div class="title">Java高级语言、Java课程设计、jsp设计</div>
+                            <div class="desc">
+                                <ul>
+                                    <li>Java是一种优秀的面向对象的语言、具有跨平台性、用途广泛、容易学习等特点、众多的开源项目都是用Java实现的、可以说Java是程序设计必学的语言。</li>
+                                    <li>JSP是一种Java servlet、主要用于实现Java web应用程序的用户界面部分。
+                                        网页开发者们通过结合HTML代码、XHTML代码、XML元素以及嵌入JSP操作和命令来编写。</li>
+                                    <li>Java的数个高级主题作为核心内容、包括Web编程、数据库编程、类型信息与反射、泛型、注解、序列化、网络编程、多线程等内容。
+                                        论述了程序设计的原则和规范、最后1章介绍了前面高级技术的综合应用、并提供了采用Servlet/JSP技术的MVC开发框架。</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="title">Vue3、JavaScript、Web课程设计</div>
+                            <div class="desc">
+                                <ul>
+                                    <li>负责基于Vue3和JavaScript的网页设计项目、与课程指导老师共同规划项目需求、提出可行性设计方案并实施。 </li>
+                                    </li>
+                                    <li>积累可供其他Web课程设计项目复用的逐步部署流程、标准化布局框架及交互模式、探索实现设计方法、体现设计的大量价值。</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="title">数据结构、python编程、软件测试</div>
+                            <div class="desc">
+                                <ul>
+                                    <li>独立负责校园网站项目的全流程设计、包括面向学生、教职员工、合作伙伴和管理员的需求分析和实现、为广泛的服务人员和用户提供支持、并得到积极的反馈。</li>
+                                    <li>基于Python的数据结构和算法库、设计并实现如表单处理引擎、数据流引擎等核心功能、为未来功能扩展奠定基础。</li>
+                                    <li>独立负责校园网站项目的测试计划和执行、包括功能测试、性能测试和用户体验测试、确保系统满足用户需求并达到预期性能指标。</li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="item">
+                    <div class="time">❖ 2016.09 ~ 2020.06</div>
+                    <div class="name">
+                        <div class="company"><a href="http://www.wenshuai.cn/" target="_blank">云阳职业教育中心 ↗</a></div>
+                        <div class="job">学生</div>
+                    </div>
+                    <div class="project-experience">
+                        <div class="item">
+                            <div class="title">Mysql、C、计算机网络基础</div>
+                            <div class="desc">
+                                <ul>
+                                    <li>在Mysql数据库管理、C编程和计算机网络基础方面的学习经验</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer">
+        <div class="copyright">
+            <div>© 2024 Design by <a href="https://asorn.cn/" target="_blank">Asorn</a></div>
+            <span>|</span>
+            <div class="fillings">
+                <a href="http://beian.miit.gov.cn/" target="_blank">渝ICP备2024036300号</a>
+            </div>
+            <span>|</span>
+            <div class="friends">
+                <a href="https://zdo.fun/" target="_blank">ZDO</a>
+            </div>
+        </div>
+    </div>
+    <div class="widget">
+        <div class="shape-light"></div>
+        <div class="shape-star">
+            <div class="rising-stars rising-stars-visible">
+                <div style="height:1px;width:1px"></div>
+                <div style="height:2px;width:2px"></div>
+                <div style="height:1px;width:1px"></div>
+            </div>
+        </div>
+        <div class="shape-earth"></div>
+    </div>
+</body>
+<script src="./js/hide.js"></script>
+<script src='./js/firework.js'></script>
+
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="zh-CN" style="color-scheme: dark;">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hugh - Personal blog</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/photo/flower.css">
+    <link rel="stylesheet" href="./css/backg.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="shortcut icon" href="./image/logo.svg" />
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+</head>
+
+<body>
+    <audio id="myAudio" autoplay loop volume="0.2">
+        <source src="https://web-detail.oss-cn-hangzhou.aliyuncs.com/image/flower.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <div class="background-container">
+        <div id="video-day" class="background video">
+            <video autoplay muted loop>
+                <source src="https://web-detail.oss-cn-hangzhou.aliyuncs.com/image/ingame.mp4" type="video/mp4">
+
+            </video>
+        </div>
+        <div id="video-night" class="background video">
+            <video autoplay muted loop>
+                <source src="https://web-detail.oss-cn-hangzhou.aliyuncs.com/image/night.mp4" type="video/mp4">
+
+            </video>
+        </div>
+    </div>
+    <canvas class="fireworks"></canvas>
+
+
+    <div class="head">
+        <div class="main">
+            <a href="./index.html" class="logo"><img src="./image/index.svg"></a>
+            <div class="menu">
+                <li class="magi btn " onclick="window.location.href='./index.html'">Home</li>
+                <li class="magi btn nav" onclick="window.location.href='./Photo.html'">Photo</li>
+                <li class="magi btn " onclick="window.location.href='./blog.html'">Blog</li>
+                <li class="magi btn" onclick="window.location.href='./about.html'">About</li>
+            </div>
+            <div class="menu" id="menu-expand">
+                <ul>
+                    <li class="magi btn skin" id="menu-expand-child"><i class="icon menu-icon"></i></li>
+                </ul>
+            </div>
+            <div id="menu-panel">
+                <div class="menu-panel-content">
+                    <ul>
+                        <li class="magi btn " onclick="window.location.href='./index.html'">Home</li>
+                        <li class="magi btn nav" onclick="window.location.href='./Photo.html'">Photo</li>
+                        <li class="magi btn" onclick="window.location.href='./blog.html'">Blog</li>
+                        <li class="magi btn" onclick="window.location.href='./about.html'">About</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <blockquote><img src="./image/logo.svg"></blockquote>
+    </div>
+    <div class="index">
+        <div class="hello">
+            <div class="title">
+                <div class="title-name">This is my
+                    <a class="title-link" href="/Photo.html">Photo</a>
+                </div>
+            </div>
+            <img src="./image/images/flower/_2020-04-05_38_38.jpg" class="title-image">
+        </div>
+        <ul class="gnineh">
+            <li>
+                <img src="./image/images/flower/_2023-12-30_5_5.jpg" alt="">
+                <div class="info">
+                    <h2>花的美丽时光</h2>
+                    <p>花朵绽放时，春风轻拂，色彩斑斓，香气四溢。</p>                    
+                </div>
+            </li>
+            <li>
+                <img src="./image/images/flower/_2023-12-30_4_4.jpg" alt="">
+                <div class="info">
+                    <h2>花儿绽放的魅力</h2>
+                    <p>夏日的花海中，蜜蜂忙碌采蜜，阳光洒下，花瓣闪烁着晶莹的露珠。</p>                  
+                </div>
+            </li>
+            <li>
+                <img src="./image/images/flower/_2023-12-30_6_6.jpg" alt="">
+                <div class="info">
+                    <h2>花开时节，绚烂如画</h2>
+                    <p>秋风吹过，树叶飘落，花朵依然坚定地盛开，迎接着金色的阳光。</p>
+                </div>
+            </li>
+            <li>
+                <img src="./image/images/flower/_2024-05-09_56_56.jpg" alt="">
+                <div class="info">
+                    <h2>花朵的娇艳与生命之美</h2>
+                    <p>冬日的花朵在白雪的映衬下，显得格外纯洁和娇嫩。</p>
+                </div>
+            </li>
+            <li>
+                <img src="./image/images/flower/_2024-05-09_61_61.jpg" alt="">
+                <div class="info">
+                    <h2>花开时节，世界绽放色彩</h2>
+                    <p>晨曦中，花瓣被露水打湿，闪耀着晶莹的光芒，如同小精灵般妖娆。</p>
+                </div>
+            </li>
+            <li>
+                <img src="./image/images/flower/_2024-05-09_64_64.jpg" alt="">
+                <div class="info">
+                    <h2>花开时，生命的奇迹绽放</h2>
+                    <p>黄昏时分，花园里弥漫着芬芳的香气，吸引着夜晚的蝴蝶和萤火虫。</p>
+                </div>
+            </li>
+            <li>
+                <img src="./image/images/flower/_2024-05-09_66_66.jpg" alt="">
+                <div class="info">
+                    <h2>花朵绽放，春天的韵律</h2>
+                    <p>雨后的花朵如沐春风，焕发出勃勃生机，散发出清新的芬芳。</p>
+                    
+                </div>
+            </li>
+            <li>
+                <img src="./image/images/flower/_2024-05-09_74_74.jpg" alt="">
+                <div class="info">
+                    <h2>花开时节，世界因它而美丽</h2>
+                    <p>花瓣轻轻飘落，如同爱情故事里的浪漫场景，寄托着美好的祝愿。</p>
+                    
+                </div>
+            </li>
+            <li>
+                <img src="./image/images/flower/_2024-05-09_80_80.jpg" alt="">
+                <div class="info">
+                    <h2>花开如梦，香远益清幽</h2>
+                    <p>春天的花朵开启了新的希望，它们是大自然恩赐的美丽礼物。</p>
+                    
+                </div>
+            </li>
+            <li>
+                <img src="./image/images/flower/_2024-05-09_81_81.jpg" alt="">
+                <div class="info">
+                    <h2>花香满径</h2>
+                    <p>夏日的花朵在午后的阳光中，色彩艳丽，散发出迷人的光彩。</p>
+                   
+                </div>
+            </li>
+            <li>
+                <img src="./image/images/flower/jhk-1720510784821.jpg" alt="">
+                <div class="info">
+                    <h2>花开时，世界沉浸在芬芳之中</h2>
+                    <p>花朵不仅仅是植物的一部分，它们是生命中的诗意和美好。</p>
+                </div>
+            </li>
+            <li>
+                <img src="./image/images/flower/jhk-1720510834060.jpg" alt="">
+                <div class="info">
+                    <h2>花开时，春风拂面，幸福满怀</h2>
+                    <p>花开时节，世界充满了希望和喜悦，每一朵花都是大自然的馈赠。</p>
+                </div>
+            </li>
+        </ul>
+        
+    </div>
+
+
+
+    <div class="footer">
+        <div class="copyright">
+            <div>© 2024 Design by <a href="https://Hugh.com" target="_blank">Hugh</a></div>
+            <span>|</span>
+            <div class="fillings">
+                <a href="http://beian.miit.gov.cn/" target="_blank">渝ICP备2024036300号</a>
+            </div>
+            <span>|</span>
+            <div class="friends">
+                <a href="https://zdo.fun/" target="_blank">ZDO</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+
+
+</script>
+<script src="./js/background.js"></script>
+<script src="./js/hide.js"></script>
+</html>

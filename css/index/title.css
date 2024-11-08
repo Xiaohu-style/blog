@@ -1,0 +1,171 @@
+.index .hello {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    --mw: 968px;
+    height: 400px;
+    width: 100%;
+    max-width: var(--mw);
+    flex-direction: column;
+}
+.index .hello .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+.index .hello .title * {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+
+.index .hello .title .title-hi {
+    font-size: 32px;
+    font-weight: 700;
+    background: linear-gradient(180deg, #E8E8F6 0%, rgba(232, 232, 246, 0.72) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.index .hello .title .title-name {
+    --bg: linear-gradient(90deg, #A29CD3 0%, #E8BFAC 100%);
+    position: relative;
+    background: var(--bg);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.index .hello .title .title-name:hover::after {
+    content: '';
+    position: absolute;
+    inset: auto 0 0;
+    width: 100%;
+    height: 1px;
+    background: var(--bg);
+}
+.index .hello .hello-desc {
+    height: 28px;
+    color: #B3B3C1;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    margin: 24px 0 0 0;
+}
+.index .hello::after {
+    content: '';
+    position: absolute;
+    width: 512px;
+    height: 512px;
+    background-image: radial-gradient(circle at center, rgba(255, 255, 255, 0.3) 1px, transparent 1px);
+    background-size: 8px 8px;
+    mask-image: radial-gradient(at center, #fff, transparent 72%);
+    -webkit-mask-image: radial-gradient(at center, #fff, transparent 72%);
+    opacity: 0.6;
+    z-index: -1;
+}
+.magical {
+    --circle-size: 600px;
+    --inset: 1px;
+    --border: 6px;
+    position: relative;
+
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--border);
+    background: linear-gradient(180deg, #3d3d3d 0%, rgba(232, 232, 246, 0.72) 100%);
+}
+
+.magical::before,.magical::after {
+    content: '';
+    position: absolute;
+    width: calc(100% + var(--inset)*2);
+    height: calc(100% + var(--inset)*2);
+    border-radius: var(--border);
+    inset: calc(0 - var(--inset));
+}
+    
+.magical::before {
+    background: radial-gradient(var(--circle-size) circle at var(--mouse-x) var(--mouse-y), rgba(255,255,255,0.3), transparent 40%);
+    z-index: -1;
+}
+.magical::after {
+    background: linear-gradient(180deg, rgba(78,78,100,0.48) 0%, rgba(78,78,100,0.2) 100%);
+    z-index: -2;
+}
+.magical .show {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0; 
+    border-radius: var(--border);
+    opacity: 0;
+    pointer-events: none;
+    background: radial-gradient(var(--circle-size) circle at var(--mouse-x) var(--mouse-y), rgba(180, 148, 190, 0.75), transparent 40%);
+    z-index: 1; 
+}
+
+.index .quickly-link .link-card .link-card-list .link-card-item {
+    background-color: #0c0a0a; 
+    box-shadow: 0px 0px 10px 0px rgba(133, 133, 133, 0.7);
+    --circle-size: 300px; 
+}
+
+    
+    .index .quickly-link .link-card .link-card-list .link-card-item * {
+        transition: opacity .4s;
+    }
+    
+    .index .quickly-link .link-card .link-card-list .link-card-item a {
+        display: flex;
+        align-items: center;
+        padding: 16px;
+        gap: 12px;
+        text-decoration: none; 
+        color: inherit; 
+        height: 75px;
+    }
+    
+    .index .quickly-link .link-card .link-card-list .link-card-item a:hover {
+     
+        transition: all .15s ease-in;
+    }
+    
+    .index .quickly-link .link-card .link-card-list .link-card-item a:hover .info,
+    .index .quickly-link .link-card .link-card-list .link-card-item a:hover .icon-arrow,
+    .index .quickly-link .link-card .link-card-list .link-card-item a:hover img {
+        opacity: 1;
+    }
+    
+    .index .quickly-link .link-card .link-card-list .link-card-item img {
+        width: 40px;
+        opacity: .6;
+    }
+    
+    .index .quickly-link .link-card .link-card-list .link-card-item .info {
+        flex: 1;
+        opacity: .8;
+    }
+    
+    .index .quickly-link .link-card .link-card-list .link-card-item .info .info-title {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 24px;
+        background: linear-gradient(180deg, #E8E8F6 0%, rgba(232, 232, 246, 0.85) 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    
+    .index .quickly-link .link-card .link-card-list .link-card-item .info .info-desc {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 20px;
+        color: #dfdfe7;
+    }
+    
+    .index .quickly-link .link-card .link-card-list .link-card-item .right-content {
+        margin-left: auto; 
+    }
+    

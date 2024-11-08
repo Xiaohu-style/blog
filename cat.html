@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="zh-CN" style="color-scheme: dark;">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hugh - Personal blog</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/photo/cat.css">
+    <link rel="stylesheet" href="./css/backg.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="shortcut icon" href="./image/logo.svg" />
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+</head>
+
+<body>
+    <audio id="myAudio" autoplay loop volume="0.2">
+        <source src="https://web-detail.oss-cn-hangzhou.aliyuncs.com/image/cat.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <div class="background-container">
+        <div id="video-day" class="background video">
+            <video autoplay muted loop>
+                <source src="https://web-detail.oss-cn-hangzhou.aliyuncs.com/image/ingame.mp4" type="video/mp4">
+
+            </video>
+        </div>
+        <div id="video-night" class="background video">
+            <video autoplay muted loop>
+                <source src="https://web-detail.oss-cn-hangzhou.aliyuncs.com/image/night.mp4" type="video/mp4">
+
+            </video>
+        </div>
+    </div>
+    <canvas class="fireworks"></canvas>
+
+
+    <div class="head">
+        <div class="main">
+            <a href="./index.html" class="logo"><img src="./image/index.svg"></a>
+            <div class="menu">
+                <li class="magi btn " onclick="window.location.href='./index.html'">Home</li>
+                <li class="magi btn nav" onclick="window.location.href='./Photo.html'">Photo</li>
+                <li class="magi btn " onclick="window.location.href='./blog.html'">Blog</li>
+                <li class="magi btn" onclick="window.location.href='./about.html'">About</li>
+            </div>
+            <div class="menu" id="menu-expand">
+                <ul>
+                    <li class="magi btn skin" id="menu-expand-child"><i class="icon menu-icon"></i></li>
+                </ul>
+            </div>
+            <div id="menu-panel">
+                <div class="menu-panel-content">
+                    <ul>
+                        <li class="magi btn " onclick="window.location.href='./index.html'">Home</li>
+                        <li class="magi btn nav" onclick="window.location.href='./Photo.html'">Photo</li>
+                        <li class="magi btn" onclick="window.location.href='./blog.html'">Blog</li>
+                        <li class="magi btn" onclick="window.location.href='./about.html'">About</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <blockquote><img src="./image/logo.svg"></blockquote>
+    </div>
+
+    <div class="index">
+        <div class="hello">
+            <div class="title">
+                <div class="title-name">This is my
+                    <a class="title-link" href="/Photo.html">Photo</a>
+                </div>
+            </div>
+            <img src="http://img.mrzym.top/FkhEXReAyMFHhASGeAjsCL3Eqcw5" class="title-image">
+        </div>
+        <div class="center_box">
+            <div class="photoList-card">
+                <div class="el-row row-space">
+                    <div class="el-col el-col-24 el-col-xs-12 el-col-sm-8 col-space">
+                        <div class="image-box flex_center animate__animated animate__fadeIn">
+                            <div class="el-image image"><img src="http://img.mrzym.top/Fs_-p0Mb7vvRMx1JuG5Jpz_g2pQw"
+                                    class="el-image__inner el-image__preview" style="object-fit: cover;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="el-col el-col-24 el-col-xs-12 el-col-sm-8 col-space">
+                        <div class="image-box flex_center animate__animated animate__fadeIn">
+                            <div class="el-image image"><img src="http://img.mrzym.top/FksTSmigJ1DyIjGptEc-pbGLQElD"
+                                    class="el-image__inner el-image__preview" style="object-fit: cover;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="el-col el-col-24 el-col-xs-12 el-col-sm-8 col-space">
+                        <div class="image-box flex_center animate__animated animate__fadeIn">
+                            <div class="el-image image"><img src="http://img.mrzym.top/FotjZR3kHIFglgn0cIL4jN4LXOX6"
+                                    class="el-image__inner el-image__preview" style="object-fit: cover;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="el-col el-col-24 el-col-xs-12 el-col-sm-8 col-space">
+                        <div class="image-box flex_center animate__animated animate__fadeIn">
+                            <div class="el-image image"><img src="http://img.mrzym.top/Ft2-WWV9HBx_1yOD2kJJaVfvya5v"
+                                    class="el-image__inner el-image__preview" style="object-fit: cover;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="el-col el-col-24 el-col-xs-12 el-col-sm-8 col-space">
+                        <div class="image-box flex_center animate__animated animate__fadeIn">
+                            <div class="el-image image"><img src="http://img.mrzym.top/Fk-IBQwGXmOcgG_REbgU4v-5Atfk"
+                                    class="el-image__inner el-image__preview" style="object-fit: cover;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="el-col el-col-24 el-col-xs-12 el-col-sm-8 col-space">
+                        <div class="image-box flex_center animate__animated animate__fadeIn">
+                            <div class="el-image image"><img src="http://img.mrzym.top/FoiWK88wLlh37reMbj5iFatO2R5I"
+                                    class="el-image__inner el-image__preview" style="object-fit: cover;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="el-col el-col-24 el-col-xs-12 el-col-sm-8 col-space">
+                        <div class="image-box flex_center animate__animated animate__fadeIn">
+                            <div class="el-image image"><img src="http://img.mrzym.top/Fj-x2WIKvwoB8UK97-KD3nrl0jOy"
+                                    class="el-image__inner el-image__preview" style="object-fit: cover;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="el-col el-col-24 el-col-xs-12 el-col-sm-8 col-space">
+                        <div class="image-box flex_center animate__animated animate__fadeIn">
+                            <div class="el-image image"><img src="http://img.mrzym.top/Fr8_QHUy7Jdd7Tx1Ofi7BIpjmY2d"
+                                    class="el-image__inner el-image__preview" style="object-fit: cover;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="el-col el-col-24 el-col-xs-12 el-col-sm-8 col-space">
+                        <div class="image-box flex_center animate__animated animate__fadeIn">
+                            <div class="el-image image"><img src="http://img.mrzym.top/Fndqm27N7T6pbXgWW5gc5rN3qt_D"
+                                    class="el-image__inner el-image__preview" style="object-fit: cover;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="copyright">
+            <div>© 2024 Design by <a href="https://Hugh.com" target="_blank">Hugh</a></div>
+            <span>|</span>
+            <div class="fillings">
+                <a href="http://beian.miit.gov.cn/" target="_blank">渝ICP备2024036300号</a>
+            </div>
+            <span>|</span>
+            <div class="friends">
+                <a href="https://zdo.fun/" target="_blank">ZDO</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+
+
+</script>
+<script src="./js/background.js"></script>
+<script src="./js/hide.js"></script>
+</html>

@@ -1,0 +1,126 @@
+.index .hello {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 8px;
+    overflow: hidden;
+}
+
+.index .hello .title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.index .hello .title-name {
+    font-size: 24px;
+    font-weight: 700;
+    color: #333;
+    position: relative;
+    background: var(--bg);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.index .hello .title-link {
+    text-decoration: none;
+    color: #666;
+    transition: color 0.3s ease;
+}
+
+.index .hello .title-link:hover {
+    color: #888;
+}
+
+.index .hello .title-image {
+    width: 100%;
+    max-width: 100%;
+    height: 400px;
+    display: block;
+    position: relative;
+    z-index: -1;
+}
+
+.index .hello .title-image::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 50%;
+    background: rgba(0, 0, 0, 1);
+    z-index: 0;
+}
+
+.gnineh {
+    margin-top: 15px;
+    list-style-type: none;
+    padding: 0;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gnineh li {
+    width: calc(33.33% - 20px);
+    margin: 10px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.gnineh li img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+.gnineh li:hover img {
+    transform: scale(1.1);
+}
+
+.gnineh .info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(19, 18, 18, 0.35);
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: opacity 0.3s, transform 0.3s;
+    box-sizing: border-box;
+    border: 2px solid transparent;
+    border-radius: 5px;
+}
+
+.gnineh li:hover .info {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.gnineh .info h2 {
+    margin-top: 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.gnineh .info p {
+    margin-bottom: 0;
+    font-size: 14px;
+}
